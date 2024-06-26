@@ -57,17 +57,38 @@ For multiline comments:
 First of all an variable is a storage for a value which you can use over and over in your code 
 
 For example lets say you are making a timed game and you want to show the time and use it to stop the game so you need to use it two times so you would use a variabe it makes your life much easier
-The types of Variables:
+The Variable types:
 There are many types bet here are the main ones you need to remember:
-1. Boolean: true or false ex.`true`
-2. Int: Integers from  -2 bil to 2 bil ex. `8652345`
-3. Double: Fractions to 15 digits ex. `9.232323456767895`
-4. Char: a letter in a string ex. `"a"`
-5. String: A sequence of characters in a Quote ex.`"hello"`
+1. boolean: true or false ex.`true`
+2. int: Integers from  -2 bil to 2 bil ex. `8652345`
+3. double: Fractions to 15 digits ex. `9.232323456767895`
+4. char: a letter in a string ex. `"a"`
+5. String: A sequence of characters in a Quote ex.`"hello"` This is a reference data type
 
 These are some infrequently used types
 
-1. Byte:-128 to 127 ex. `-128`
-2. Short:-32728 to 32767 ex. `32500`
-3. Long: Integers fo -9 quintillion to 9 quintillion ex. `9000000000`
-4. Float: Fractions from 6-7 digits ex. `2.134587`
+1. byte:-128 to 127 ex. `-128`
+2. short:-32728 to 32767 ex. `32500`
+3. long: Integers fo -9 quintillion to 9 quintillion ex. `9000000000`
+4. float: Fractions from 6-7 digits ex. `2.134587`
+
+To use them do
+
+`type(from above, pay attention to capital for string) x = ....;`
+, An Example is `String greeting = "hello";`
+
+### Trick
+To swap an variable create a temporary one store 1 value switch the value
+then set the non stored variable to temp
+```
+int x = 5;
+int y = 6;
+int temp;
+
+temp = x;
+x = y;
+y = temp;
+temp = null;
+```
+## User Input
+We need to use an module to take user input so to import it we have to use this line 
